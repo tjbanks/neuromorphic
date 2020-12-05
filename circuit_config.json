@@ -1,72 +1,57 @@
 {
   "manifest": {
     "$BASE_DIR": "${configdir}",
-    "$NETWORK_DIR": "$BASE_DIR/network",
-    "$COMPONENTS_DIR": "$BASE_DIR/components"
+    "$NETWORK_DIR": "$BASE_DIR\\network",
+    "$COMPONENTS_DIR": "$BASE_DIR\\components"
   },
   "components": {
-    "biophysical_neuron_models_dir": "$COMPONENTS_DIR/biophysical_neuron_models",
-    "mechanisms_dir": "$COMPONENTS_DIR/mechanisms",
-    "morphologies_dir": "$COMPONENTS_DIR/morphologies",
-    "point_neuron_models_dir": "$COMPONENTS_DIR/point_neuron_models",
-    "synaptic_models_dir": "$COMPONENTS_DIR/synaptic_models",
-    "templates_dir": "$COMPONENTS_DIR/templates"
+    "biophysical_neuron_models_dir": "$COMPONENTS_DIR\\biophysical_neuron_models",
+    "mechanisms_dir": "$COMPONENTS_DIR\\mechanisms",
+    "morphologies_dir": "$COMPONENTS_DIR\\morphologies",
+    "point_neuron_models_dir": "$COMPONENTS_DIR\\point_neuron_models",
+    "synaptic_models_dir": "$COMPONENTS_DIR\\synaptic_models",
+    "templates_dir": "$COMPONENTS_DIR\\templates",
+    "__pycache___dir": "$COMPONENTS_DIR\\__pycache__"
   },
   "networks": {
     "nodes": [
       {
-        "nodes_file": "$NETWORK_DIR/extnet_nodes.h5",
-        "node_types_file": "$NETWORK_DIR/extnet_node_types.csv"
+        "nodes_file": "$NETWORK_DIR\\extnet_nodes.h5",
+        "node_types_file": "$NETWORK_DIR\\extnet_node_types.csv"
       },
       {
-        "nodes_file": "$NETWORK_DIR/layer0_nodes.h5",
-        "node_types_file": "$NETWORK_DIR/layer0_node_types.csv"
+        "nodes_file": "$NETWORK_DIR\\layer0_nodes.h5",
+        "node_types_file": "$NETWORK_DIR\\layer0_node_types.csv"
       },
       {
-        "nodes_file": "$NETWORK_DIR/layer1_nodes.h5",
-        "node_types_file": "$NETWORK_DIR/layer1_node_types.csv"
+        "nodes_file": "$NETWORK_DIR\\layer1_nodes.h5",
+        "node_types_file": "$NETWORK_DIR\\layer1_node_types.csv"
       },
       {
-        "nodes_file": "$NETWORK_DIR/layer2_nodes.h5",
-        "node_types_file": "$NETWORK_DIR/layer2_node_types.csv"
+        "nodes_file": "$NETWORK_DIR\\layer2_nodes.h5",
+        "node_types_file": "$NETWORK_DIR\\layer2_node_types.csv"
       },
       {
-        "nodes_file": "$NETWORK_DIR/layer3_nodes.h5",
-        "node_types_file": "$NETWORK_DIR/layer3_node_types.csv"
+        "nodes_file": "$NETWORK_DIR\\layer3_nodes.h5",
+        "node_types_file": "$NETWORK_DIR\\layer3_node_types.csv"
       }
     ],
     "edges": [
       {
-        "edges_file": "$NETWORK_DIR/extnet_layer0_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/extnet_layer0_edge_types.csv"
+        "edges_file": "$NETWORK_DIR\\extnet_layer0_edges.h5",
+        "edge_types_file": "$NETWORK_DIR\\extnet_layer0_edge_types.csv"
       },
       {
-        "edges_file": "$NETWORK_DIR/layer0_layer0_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer0_layer0_edge_types.csv"
+        "edges_file": "$NETWORK_DIR\\layer0_layer1_edges.h5",
+        "edge_types_file": "$NETWORK_DIR\\layer0_layer1_edge_types.csv"
       },
       {
-        "edges_file": "$NETWORK_DIR/layer0_layer1_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer0_layer1_edge_types.csv"
+        "edges_file": "$NETWORK_DIR\\layer1_layer2_edges.h5",
+        "edge_types_file": "$NETWORK_DIR\\layer1_layer2_edge_types.csv"
       },
       {
-        "edges_file": "$NETWORK_DIR/layer1_layer1_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer1_layer1_edge_types.csv"
-      },
-      {
-        "edges_file": "$NETWORK_DIR/layer1_layer2_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer1_layer2_edge_types.csv"
-      },
-      {
-        "edges_file": "$NETWORK_DIR/layer2_layer2_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer2_layer2_edge_types.csv"
-      },
-      {
-        "edges_file": "$NETWORK_DIR/layer2_layer3_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer2_layer3_edge_types.csv"
-      },
-      {
-        "edges_file": "$NETWORK_DIR/layer3_layer3_edges.h5",
-        "edge_types_file": "$NETWORK_DIR/layer3_layer3_edge_types.csv"
+        "edges_file": "$NETWORK_DIR\\layer2_layer3_edges.h5",
+        "edge_types_file": "$NETWORK_DIR\\layer2_layer3_edge_types.csv"
       }
     ],
     "gap_juncs": []
